@@ -1,0 +1,222 @@
+body {
+  font-size: 16px;
+  color: black;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+
+}
+
+p {
+ padding-left: 10px;
+ padding-right: 10px;
+padding-bottom: 15px;
+
+}
+
+ul {
+list-style-type: none;
+}
+
+a { text-decoration: none;}
+
+
+
+/** HEADER **/
+
+header {
+  background-color: lightgrey;
+  
+}
+#header-nav {
+  
+  border-radius: 0;
+  border: 0;
+}
+
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+h1 { /* Restaurant name */
+  font-family: 'Lora', sans-serif;
+  color: black;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  padding: 0px 0px 0px 10px;
+  line-height: .75;
+}
+
+
+
+.navbar-header button.navbar-toggle, .navbar-header  {
+  border: 2px solid black;
+}
+.navbar-header button.navbar-toggle {
+    margin: -55px 15px 15px 25px;
+    padding-top: 5px;
+
+}
+
+
+/* END HEADER */
+
+h2 {
+  text-align: center;
+
+}
+/* HOME PAGE */
+
+.background-menu {
+  background-color: darkgrey;
+
+}
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+#menu-chicken, #menu-beef, #menu-susi {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#menu-chicken span, #menu-beef span, #menu-susi span {
+  position: absolute;
+  margin-top: 10px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+
+  font-weight: bold;
+  color: black;
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+
+/********** desktop MD **********/
+@media (min-width: 992px) {
+  .navbar-toggle {
+    display: none;
+  }
+
+  .hidden-xs {
+     display: none;
+   } 
+
+   .container .jumbotron {
+    background: url('') no-repeat;
+    height: 675px;
+  }
+
+}
+
+.sr-only {
+  display: none;
+}
+
+/********** tablet SM **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+
+.hidden-xs {
+  display: none;
+}
+
+  .navbar-toggle {
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 50px;
+  padding: 9px 10px;
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 1px;
+  
+    }
+
+  .navbar-toggle: focus {
+    outline: 0;
+  }
+
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+  
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+
+
+
+}
+
+
+
+/********** mobile XS**********/
+@media (max-width: 767px) {
+
+#collapsable-nav {
+background-color: green;
+text-align: center;
+margin-top: 15px;
+margin-bottom: 15px;
+padding: 5px;
+
+}
+
+.icon-bar {
+  
+}
+
+.hidden-xs-button {
+  border: 1px solid black;
+  width: 700px;
+
+}
+
+  
+.col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
+
+}
+  
+
+
+
+
+
+
+
